@@ -170,33 +170,49 @@
 </template>
 
 <script type="text/javascript">
+  'use strict';
+
   var fireballSize = 22;
   var wizardSpeed = 3;
   var wizardWidth = 70;
-  var getFireballSpeed;
-  var getWizardHeight;
-  var getWizardX;
-  var getWizardY;
 
+  /**
+  * Получить скорость фаербола
+  * @param {Boolean} left Направление полета фаербола
+  * @returns {Number}
+  */
+  var getFireballSpeed;
   getFireballSpeed = function (left) {
-    if (left) {
-      getFireballSpeed = 5; 
-    } else {
-      getFireballSpeed = 2;
-    }
-    return getFireballSpeed;
+    return left ? 5 : 2;
   }
+
+  /**
+  * Получить высоту мага
+  * @returns {Number}
+  */
+  var getWizardHeight;
   getWizardHeight = function () {
-    getWizardHeight = 1.337 * wizardWidth;
-    return getWizardHeight;
+    return 1.337 * wizardWidth;
   }
+
+  /**
+  * Получить положение мага, отцентрованное по горизонтали
+  * @param {Number} width ширина игровой области
+  * @returns {Number}
+  */
+  var getWizardX;
   getWizardX = function (width) {
-    getWizardX = width / 2;
-    return getWizardX;
+    return width / 2;
   }
+
+  /**
+  * Получить положение мага, отцентрованное по вертикали
+  * @param {Number} height высота игровой области
+  * @returns {Number}
+  */
+  var getWizardY;
   getWizardY = function (height) {
-    getWizardY = height / 3;
-    return getWizardY;
+    return height / 3;
   }
 
 
