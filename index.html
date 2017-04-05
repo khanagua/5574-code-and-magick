@@ -179,44 +179,40 @@
   /**
   * Получить скорость фаербола
   * @param {Boolean} left Направление полета фаербола
-  * @returns {Number}
+  * @return {Number}
   */
-  var getFireballSpeed;
-  getFireballSpeed = function (left) {
+  var getFireballSpeed = function (left) {
     return left ? 5 : 2;
-  }
+  };
 
   /**
   * Получить высоту мага
-  * @returns {Number}
+  * @return {Number}
   */
-  var getWizardHeight;
-  getWizardHeight = function () {
+  var getWizardHeight = function () {
     return 1.337 * wizardWidth;
-  }
-
+  };
   /**
   * Получить положение мага, отцентрованное по горизонтали
   * @param {Number} width ширина игровой области
-  * @returns {Number}
+  * @return {Number}
   */
-  var getWizardX;
-  getWizardX = function (width) {
+  var getWizardX = function (width) {
     return width / 2;
-  }
+  };
 
   /**
   * Получить положение мага, отцентрованное по вертикали
   * @param {Number} height высота игровой области
-  * @returns {Number}
+  * @return {Number}
   */
-  var getWizardY;
-  getWizardY = function (height) {
+  var getWizardY = function (height) {
     return height / 3;
-  }
+  };
 
 
 </script>
+<script type="text/javascript" src="js/stat.js"></script>
 <script type="text/javascript" src="js/game.js"></script>
 
 </body>
